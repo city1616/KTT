@@ -10,18 +10,18 @@
 	}
 	.menu {
 		float: left;
-		width: 20%;
+		width: 15%;
 		text-align: center;
 	}
 	.main {
 		float: left;
-		width: 60%;
+		width: 65%;
 		padding: 0 20px;
 	}
 	.right {
 		background-color: #e5e5e5;
 		float: left;
-		width: 20%;
+		width: 15%;
 		padding: 15px;
 		margin-top: 7px;
 		text-align: center;
@@ -30,7 +30,7 @@
 		margin: 0;
 	}
 	div {
-		padding: 30px 0;
+		padding: 10px 0;
 	}
 	form {
 		position: relative;
@@ -39,7 +39,7 @@
 	}
 	.d1 {background: #A3D0C3;}
 	.d1 input {
-		width: 100%;
+		width: 500px;
 		height: 42px;
 		padding-left: 10px;
 		border: 2px solid #7BA7AB;
@@ -50,8 +50,8 @@
 	}
 	.d1 button {
 		position: absolute; 
-		top: 0;
-		right: 0px;
+		top: 59px;
+		right: 400px;
 		width: 42px;
 		height: 42px;
 		border: none;
@@ -84,7 +84,7 @@
 		list-style-type: none;
 		margin: 0;
 		padding: 0;
-		width: 200px;
+		width: 250px;
 		background-color: #f1f1f1;
 	}
 	li a {
@@ -101,10 +101,35 @@
 		background-color: #555;
 		color: white;
 	}
+	#footer {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		height: 70px;
+		background: #5e5e5e;
+	}
 	</style>
 </head>
-<body style = "font-family: Verdana; Color: #aaaaaa;">
-	<div style = "background-color: #A3D0C3; padding: 15px; text-align: center;">
+<body style = "font-family: Raleway; Color: #aaaaaa;">
+	<div style = "background-color: #A3D0C3; padding: 5px; text-align: center;">
+		<img src = "moviebear2.png" alt = "moviebear" style = "width: 100px; height: 100px; float: center;">
+		<div class = "d1">
+			<form>
+				<h1>KTT</h1>
+				<input type = "text" placeholder = "Enter">
+				<button type = "submit"></button>
+			</form>
+		</div>
+		<!--
+		<div style = "width: 100%;">
+			<div class = "search__container">
+				<p class = "search__title">K T T</p>
+				<p align = "center">
+					<input class = "search__input" type = "text" placeholder = "영화검색">
+				</p>
+			</div>
+		</div>
+
 		<table style = "width: 100%;">
 			<tr>
 				<td style = "width: 38%;"><img src = "moviebear2.png" alt = "moviebear" style = "width: 100px; height: 100px; float: right;"></td>
@@ -118,7 +143,7 @@
 					</div>
 				</td>
 			</tr>
-		</table>
+		</table>-->
 	</div>
 	<div style = "overflow: auto;">
 		<div class = "menu">
@@ -130,8 +155,36 @@
 			</ul>
 		</div>
 		<div class = "main">
-			<h2>Main Center</h2>
-			<p>main main main main main</p>
+			<a href = "main_button1.html" target = "ifr">예매 순</a>
+			<a href = "main_button2.html" target = "ifr">평점 순</a>
+			<a href = "main_button3.html" target = "ifr">박스오피스</a>
+			<a href = "main_button4.html" target = "ifr">개봉 예정작</a>
+			<iframe src = "main_button1.html" height = "300" width = "100%" name = "ifr"></iframe>
+			<div>
+				<table style = "width: 100%">
+					<tr>
+						<th>
+							<a href = "main_button1.html" target = "_blank">극장 별 예매</a>
+							<ul class = "list">
+								<li><a href = "#cgv">CGV</a></li>
+								<li><a href = "#lotte">롯데시네마</a></li>
+								<li><a href = "#mega">메가박스</a></li>
+							</ul>
+						</th>
+						<th>
+							<a href = "main_button1.html" target = "_black">영화 별 예매</a>
+							<ul class = "list">
+								<li><a href = "#m">말레피센트</a></li>
+								<li><a href = "#joker">조커</a></li>
+								<li><a href = "#i">기생충</a></li>
+							</ul>
+						</th>
+					</tr>
+					<tr>
+						<td><a href = "main_button1.html" target = "_black">리뷰</a></td>
+					</tr>
+				</table>
+			</div>
 		</div>
 		<div class = "right">
 			<h2>Login</h2>
@@ -144,15 +197,16 @@
 			</form>	
 		</div>
 	</div>
-	<div style = "background-color: #e5e5e5; text-align: center; padding: 10px; margin-top: 7px;">
-		<a href = "https://movie.naver.com" target = "_blank"><strong>관리자 페이지</strong></a>
-		<p> 본 컨텐츠 저작권은 저작권자 또는 제공처에 있으며, 이를 무단 이용하는 경우 저작권법 등에 따라 법적 책임을 질 수 있습니다.</p>
-		<address>
-			<em>Copyright @Seungwoo</em>
-			<span>3K1M</span>
-		</address>
+	<div id = "footer">
+		<div style = "background-color: #e5e5e5; text-align: center; padding: 10px; margin-top: 7px;">
+			<a href = "https://movie.naver.com" target = "_blank"><strong>관리자 페이지</strong></a>
+			<p> 본 컨텐츠 저작권은 저작권자 또는 제공처에 있으며, 이를 무단 이용하는 경우 저작권법 등에 따라 법적 책임을 질 수 있습니다.</p>
+			<address>
+				<em>Copyright @Seungwoo</em>
+				<span>3K1M</span>
+			</address>
+		</div>
 	</div>
-
 </body>
 </html>
 
