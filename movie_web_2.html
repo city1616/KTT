@@ -13,6 +13,14 @@
 		width: 15%;
 		text-align: center;
 	}
+	.menu li {
+		text-align: center;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		width: 250px;
+		background-color: #f1f1f1;
+	}
 	.main {
 		float: left;
 		width: 65%;
@@ -80,14 +88,6 @@
 		background-color: transparent;
 		text-decoration: underline;
 	}
-	.sidemenu {
-		text-align: center;
-		list-style-type: none;
-		margin: 0;
-		padding: 0;
-		width: 250px;
-		background-color: #f1f1f1;
-	}
 	li {
 		text-align: left;
 	}
@@ -104,6 +104,11 @@
 	li a:hover:not(.active) {
 		background-color: #555;
 		color: white;
+	}
+	.main_button {
+		text-align: center;
+		padding: 10px;
+		font-size: 30px;
 	}
 	#footer {
 		position: auto;
@@ -152,18 +157,18 @@
 	</div>
 	<div style = "overflow: auto;">
 		<div class = "menu">
-			<ul class = "sidemenu">
-				<li class = "sidemenu"><a class = "active" href = "#home">HOME</a></li>
-				<li class = "sidemenu"><a href = "#ticketing">TICKETING</a></li>
-				<li class = "sidemenu"><a href = "#review">REVIEW</a></li>
-				<li class = "sidemenu"><a href = "#about">ABOUT</a></li>
+			<ul>
+				<li><a class = "active" href = "#home">HOME</a></li>
+				<li><a href = "#ticketing">TICKETING</a></li>
+				<li><a href = "#review">REVIEW</a></li>
+				<li><a href = "#about">ABOUT</a></li>
 			</ul>
 		</div>
-		<div class = "main">
-			<a href = "main_button1.html" target = "ifr">예매 순</a>
-			<a href = "main_button2.html" target = "ifr">평점 순</a>
-			<a href = "main_button3.html" target = "ifr">박스오피스</a>
-			<a href = "main_button4.html" target = "ifr">개봉 예정작</a>
+		<div class = "main" style = "text-align: center;">
+			<a href = "main_button1.html" target = "ifr" class = "main_button">예매 순</a>
+			<a href = "main_button2.html" target = "ifr" class = "main_button">평점 순</a>
+			<a href = "main_button3.html" target = "ifr" class = "main_button">박스오피스</a>
+			<a href = "main_button4.html" target = "ifr" class = "main_button">개봉 예정작</a>
 			<iframe src = "main_button1.html" height = "300" width = "100%" name = "ifr"></iframe>
 			<div>
 				<table style = "width: 100%">
