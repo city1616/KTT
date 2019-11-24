@@ -55,6 +55,9 @@ td.top_blockquote {
 	width: 100%;
 	background-color: #5e5e5e;
 }
+.center_menu li {
+	float: left;
+}
 /*
 .menu li a {
 	font-size: 1.05em;
