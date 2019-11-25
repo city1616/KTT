@@ -4,16 +4,23 @@
 	<title>KTT</title>
 	<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
 	<meta charset = "utf-8">
-	<link href = "global.css" rel = "stylesheet" type = "text/css" />
-	<link rel="stylesheet" type="text/css" href="normalize.css" />
-	<link rel="stylesheet" type="text/css" href="demo.css" />
-	<link rel="stylesheet" type="text/css" href="component.css" />
+	<link rel = "icon" href = "image/bear3.ico" />
+	<link rel = "icon" href = "favicon.ico" />
+	<link rel = "stylesheet" type = "text/css" href = "CSS/global.css"  />
+	<link rel = "stylesheet" type = "text/css" href = "CSS/MENU/normalize.css" />
+	<link rel = "stylesheet" type = "text/css" href = "CSS/MENU/demo.css" />
+	<link rel = "stylesheet" type = "text/css" href = "CSS/MENU/component.css" />
+	<link rel = "stylesheet" type = "text/css" href = "CSS/LOGIN/set1.css" /> <!-- 오른쪽으로 밀리는 모션 -->
+	<!-- <link rel = "stylesheet" type = "text/css" href = "CSS/LOGIN/normalize.css" /> -->
+	<!-- <link rel="stylesheet" type="text/css" href="CSS/LOGIN/demo.css" /> -->
+
+
 </head>
 
 <body style = "font-family: Raleway; Color: #aaaaaa;">
 	<div style = "background-color: #5e5e5e; padding: 5px; text-align: center;"> <!-- #A3D0C3 -->
 		<div>
-			<img src = "moviebear3.png" alt = "moviebear" class = "title_image">
+			<img src = "image/moviebear3.png" alt = "moviebear" class = "title_image">
 			<h1 class = "search_title">KTT</h1>
 			<div class = "search">
 				<form class = "search_form">
@@ -47,7 +54,7 @@
 										</ul>
 									</div>
 									
-									<!--
+									<!--	left_side_menu
 									<div align = "center">
 										<br>
 										<div class = "menu">
@@ -63,38 +70,34 @@
 								</td>
 								<td width = "600" valign = "top" class = "main_center">
 									<br>
+									<div class="menu menu--alonso">
+										<ul class="center_menu">
+											<li class="menu__item menu__item--current"><a href="main_button1.html" target = "ifr" class="menu__link">예매 순</a></li>
+											<li class="menu__item"><a href="main_button2.html" target = "_blank" class="menu__link">평점 순</a></li>
+											<li class="menu__item"><a href="main_button3.html" target = "ifr" class="menu__link">박스오피스</a></li>
+											<li class="menu__item"><a href="main_button4.html" target = "ifr" class="menu__link">개봉 예정작</a></li>
+											<li class="menu__line"></li>
+										</ul>
+									</div>
+									<!--  main-center_menu
 									<table border = "0" width = "100%" cellspacing = "5" cellpadding = "0">
 										<tbody>
 											<tr>
-												<th>
-													<div class="menu menu--alonso">
-														<ul class="center_menu">
-															<li class="menu__item menu__item--current"><a href="#" class="menu__link">예매 순</a></li>
-															<li class="menu__item"><a href="#" class="menu__link">평점 순</a></li>
-															<li class="menu__item"><a href="#" class="menu__link">박스오피스</a></li>
-															<li class="menu__item"><a href="#" class="menu__link">개봉 예정작</a></li>
-															<li class="menu__line"></li>
-														</ul>
-													</div>						
-												</th>
+												<th><a href = "main_button1.html" target = "ifr" class = "main_button">예매 순</a></th>
+												<th><a href = "main_button2.html" target = "ifr" class = "main_button">평점 순</a></th>
+												<th><a href = "main_button3.html" target = "ifr" class = "main_button">박스오피스</a></th>
+												<th><a href = "main_button4.html" target = "ifr" class = "main_button">개봉 예정작</a></th>
 											</tr>
-
-											<!--
-											<tr>
-												<th><a href = "main_button1.html" target = "itr" class = "main_button">예매 순</a></th>
-												<th><a href = "main_button2.html" target = "itr" class = "main_button">평점 순</a></th>
-												<th><a href = "main_button3.html" target = "itr" class = "main_button">박스오피스</a></th>
-												<th><a href = "main_button4.html" target = "itr" class = "main_button">개봉 예정작</a></th>
-											</tr>
-										-->
-										</body>
+										</tbody>
 									</table>
+									-->
 									<br>
-									<table border = "0" width = "100%" cellspacing = "5" cellpadding = "0">
+									<br>
+									<table border = "0" width = "100%" height = "300" cellspacing = "5" cellpadding = "0">
 										<tbody>
 											<tr>
 												<td>
-													<iframe src = "main_button1.html" width = "100%" height = "100%" name = "ifr"></iframe>
+													<iframe class = "frame" src = "https://movie.naver.com" name = "ifr"></iframe>
 												</td>
 											</tr>
 										</tbody>
@@ -124,7 +127,7 @@
 												<td>
 													<a href = "main_button1.html" target = "_blank" style = "text-align: left;"><h2><i>리뷰</i></h2></a>
 													<ul class = "list">
-														<li><a href = "#review1">리뷰1 (영화제목 / 평점 / 리뷰내용)</a></li>
+														<li><a href = "#review1">리뷰1</a></li>
 														<li><a href = "#review1">리뷰2</a></li>
 														<li><a href = "#review1">리뷰3</a></li>
 														<li><a href = "#review1">리뷰4</a></li>
@@ -135,6 +138,23 @@
 									</table>
 								</td>
 								<td valign = "top" class = "right_side">
+									<section class="content">
+										<h2>LOGIN</h2>
+										<span class="input input--kaede">
+											<input class="input__field input__field--kaede" type="text" id="input-35" />
+											<label class="input__label input__label--kaede" for="input-35">
+												<span class="input__label-content input__label-content--kaede">ID</span>
+											</label>
+										</span>
+										<span class="input input--kaede">
+											<input class="input__field input__field--kaede" type="text" id="input-36" />
+											<label class="input__label input__label--kaede" for="input-36">
+												<span class="input__label-content input__label-content--kaede">PASSWORD</span>
+											</label>
+										</span>
+										<p><input type = "submit" value = " Login" name = " submit"></input><input type = "submit" value = "Join in" name = " join"></input></p>
+									</section>
+									<!-- login 창
 									<div class = "login">
 										<h2>Login</h2>
 										<form id = "loginform" method = "post" action = "/user/login">
@@ -145,16 +165,22 @@
 											</div>
 										</form>
 									</div>
+								-->
 								</td>
 							</tr>
 						</tbody>
 					</table>
 				</td>
 			</tr>
+			<tr>
+				<td>
+					<hr color = "#000000" size = "1px">
+				</td>
+			</tr>
 		</tbody>
 	</table>
 	<br>
-	<div align = "center" style = "background-color: #e5e5e5; text-align: center; padding: 10px; margin-top: 7px;">
+	<div align = "center" style = "background-color: #5e5e5e; text-align: center; padding: 10px; margin-top: 7px;">
 		<a href = "https://movie.naver.com" target = "_blank"><strong>관리자 페이지</strong></a>
 		<p> 본 컨텐츠 저작권은 저작권자 또는 제공처에 있으며, 이를 무단 이용하는 경우 저작권법 등에 따라 법적 책임을 질 수 있습니다.</p>
 		<address>
@@ -162,6 +188,7 @@
 			<span>3K1M</span>
 		</address>
 	</div>
-	<script src="js/classie.js"></script> <!-- menu_bar -->
+	<script src="js/MENU/classie.js"></script> <!-- menu_bar -->
+	<script src="js/LOGIN/classie.js"></script> <!-- login -->
 </body>
 </html>

@@ -46,8 +46,8 @@ td.top_blockquote {
 	position: fixed;
 }
 */
-
-.menu ul {
+/*
+.menu__list {
 	text-align: center;
 	list-style-type: none;
 	margin: 0;
@@ -55,8 +55,13 @@ td.top_blockquote {
 	width: 100%;
 	background-color: #5e5e5e;
 }
+*/
 .center_menu li {
 	float: left;
+}
+
+.center_menu {
+	list-style-type: none;
 }
 /*
 .menu li a {
@@ -127,6 +132,13 @@ td.top_blockquote {
 	padding: 0px;
 	margin-top: 7px;
 	text-align: center;
+}
+
+.frame {
+	width: 100%;
+	height: 100%;
+	border: none;
+	overflow: auto;
 }
 
 a.nav:link,a.nav:visited {
