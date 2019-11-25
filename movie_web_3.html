@@ -4,10 +4,10 @@
 	<title>KTT</title>
 	<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
 	<meta charset = "utf-8">
-	<link href = "global.css" rel = "stylesheet" type = "text/css" />
-	<link rel="stylesheet" type="text/css" href="normalize.css" />
-	<link rel="stylesheet" type="text/css" href="demo.css" />
-	<link rel="stylesheet" type="text/css" href="component.css" />
+	<link href = "CSS/global.css" rel = "stylesheet" type = "text/css" />
+	<link rel="stylesheet" type="text/css" href="CSS/MENU/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="CSS/MENU/demo.css" />
+	<link rel="stylesheet" type="text/css" href="CSS/MENU/component.css" />
 </head>
 
 <body style = "font-family: Raleway; Color: #aaaaaa;">
@@ -47,7 +47,7 @@
 										</ul>
 									</div>
 									
-									<!--
+									<!--	left_side_menu
 									<div align = "center">
 										<br>
 										<div class = "menu">
@@ -63,34 +63,29 @@
 								</td>
 								<td width = "600" valign = "top" class = "main_center">
 									<br>
+									<div class="menu menu--alonso">
+										<ul class="center_menu">
+											<li class="menu__item menu__item--current"><a href="#" class="menu__link">예매 순</a></li>
+											<li class="menu__item"><a href="#" class="menu__link">평점 순</a></li>
+											<li class="menu__item"><a href="#" class="menu__link">박스오피스</a></li>
+											<li class="menu__item"><a href="#" class="menu__link">개봉 예정작</a></li>
+											<li class="menu__line"></li>
+										</ul>
+									</div>
+									<!--  main-center_menu
 									<table border = "0" width = "100%" cellspacing = "5" cellpadding = "0">
 										<tbody>
-											<tr>
-												<th>
-													<div class="menu menu--alonso">
-														<ul class="center_menu">
-															<li class="menu__item menu__item--current"><a href="#" class="menu__link">예매 순</a></li>
-															<li class="menu__item"><a href="#" class="menu__link">평점 순</a></li>
-															<li class="menu__item"><a href="#" class="menu__link">박스오피스</a></li>
-															<li class="menu__item"><a href="#" class="menu__link">개봉 예정작</a></li>
-															<li class="menu__line"></li>
-														</ul>
-													</div>						
-												</th>
-											</tr>
-
-											<!--
 											<tr>
 												<th><a href = "main_button1.html" target = "itr" class = "main_button">예매 순</a></th>
 												<th><a href = "main_button2.html" target = "itr" class = "main_button">평점 순</a></th>
 												<th><a href = "main_button3.html" target = "itr" class = "main_button">박스오피스</a></th>
 												<th><a href = "main_button4.html" target = "itr" class = "main_button">개봉 예정작</a></th>
 											</tr>
-										-->
-										</body>
+										</tbody>
 									</table>
+									-->
 									<br>
-									<table border = "0" width = "100%" cellspacing = "5" cellpadding = "0">
+									<table border = "0" width = "100%" height = "300" cellspacing = "5" cellpadding = "0">
 										<tbody>
 											<tr>
 												<td>
@@ -135,6 +130,28 @@
 									</table>
 								</td>
 								<td valign = "top" class = "right_side">
+									<section class="content">
+										<h2>LOGIN</h2>
+										<span class="input input--kaede">
+											<input class="input__field input__field--kaede" type="text" id="input-35" />
+											<label class="input__label input__label--kaede" for="input-35">
+												<span class="input__label-content input__label-content--kaede">First Name</span>
+											</label>
+										</span>
+										<span class="input input--kaede">
+										<input class="input__field input__field--kaede" type="text" id="input-36" />
+										<label class="input__label input__label--kaede" for="input-36">
+											<span class="input__label-content input__label-content--kaede">Last Name</span>
+										</label>
+									</span>
+									<span class="input input--kaede">
+										<input class="input__field input__field--kaede" type="text" id="input-37" />
+										<label class="input__label input__label--kaede" for="input-37">
+											<span class="input__label-content input__label-content--kaede">Website</span>
+										</label>
+									</span>
+								</section>
+									<!-- login 창
 									<div class = "login">
 										<h2>Login</h2>
 										<form id = "loginform" method = "post" action = "/user/login">
@@ -145,6 +162,7 @@
 											</div>
 										</form>
 									</div>
+								-->
 								</td>
 							</tr>
 						</tbody>
@@ -162,6 +180,6 @@
 			<span>3K1M</span>
 		</address>
 	</div>
-	<script src="js/classie.js"></script> <!-- menu_bar -->
+	<script src="js/MENU/classie.js"></script> <!-- menu_bar -->
 </body>
 </html>
