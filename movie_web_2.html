@@ -13,6 +13,14 @@
 		width: 15%;
 		text-align: center;
 	}
+	.menu li {
+		text-align: center;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		width: 250px;
+		background-color: #f1f1f1;
+	}
 	.main {
 		float: left;
 		width: 65%;
@@ -34,12 +42,12 @@
 	}
 	form {
 		position: relative;
-		width: 80%;
+		width: 40%;
 		margin: 0 auto;
 	}
 	.d1 {background: #A3D0C3;}
 	.d1 input {
-		width: 500px;
+		width: 100%;
 		height: 42px;
 		padding-left: 10px;
 		border: 2px solid #7BA7AB;
@@ -50,8 +58,8 @@
 	}
 	.d1 button {
 		position: absolute; 
-		top: 59px;
-		right: 400px;
+		top: 185px;
+		right: 0px;
 		width: 42px;
 		height: 42px;
 		border: none;
@@ -80,12 +88,8 @@
 		background-color: transparent;
 		text-decoration: underline;
 	}
-	ul {
-		list-style-type: none;
-		margin: 0;
-		padding: 0;
-		width: 250px;
-		background-color: #f1f1f1;
+	li {
+		text-align: left;
 	}
 	li a {
 		display: block;
@@ -101,20 +105,26 @@
 		background-color: #555;
 		color: white;
 	}
+	.main_button {
+		text-align: center;
+		padding: 10px;
+		font-size: 30px;
+	}
 	#footer {
-		position: absolute;
+		position: auto;
 		bottom: 0;
 		width: 100%;
-		height: 70px;
+		height: 50px;
 		background: #5e5e5e;
 	}
 	</style>
 </head>
 <body style = "font-family: Raleway; Color: #aaaaaa;">
-	<div style = "background-color: #A3D0C3; padding: 5px; text-align: center;">
-		<img src = "moviebear2.png" alt = "moviebear" style = "width: 100px; height: 100px; float: center;">
+	<div style = "background-color: #5e5e5e; padding: 5px; text-align: center;"> <!-- #A3D0C3 -->
+		
 		<div class = "d1">
 			<form>
+				<img src = "moviebear3.png" alt = "moviebear" style = "width: 100px; height: 100px; float: center;">
 				<h1>KTT</h1>
 				<input type = "text" placeholder = "Enter">
 				<button type = "submit"></button>
@@ -154,17 +164,17 @@
 				<li><a href = "#about">ABOUT</a></li>
 			</ul>
 		</div>
-		<div class = "main">
-			<a href = "main_button1.html" target = "ifr">예매 순</a>
-			<a href = "main_button2.html" target = "ifr">평점 순</a>
-			<a href = "main_button3.html" target = "ifr">박스오피스</a>
-			<a href = "main_button4.html" target = "ifr">개봉 예정작</a>
+		<div class = "main" style = "text-align: center;">
+			<a href = "main_button1.html" target = "ifr" class = "main_button">예매 순</a>
+			<a href = "main_button2.html" target = "ifr" class = "main_button">평점 순</a>
+			<a href = "main_button3.html" target = "ifr" class = "main_button">박스오피스</a>
+			<a href = "main_button4.html" target = "ifr" class = "main_button">개봉 예정작</a>
 			<iframe src = "main_button1.html" height = "300" width = "100%" name = "ifr"></iframe>
 			<div>
 				<table style = "width: 100%">
 					<tr>
 						<th>
-							<a href = "main_button1.html" target = "_blank">극장 별 예매</a>
+							<a href = "main_button1.html" target = "_blank" style = "text-align: left;"><h2><i>극장 별 예매</i></h2></a>
 							<ul class = "list">
 								<li><a href = "#cgv">CGV</a></li>
 								<li><a href = "#lotte">롯데시네마</a></li>
@@ -172,7 +182,7 @@
 							</ul>
 						</th>
 						<th>
-							<a href = "main_button1.html" target = "_black">영화 별 예매</a>
+							<a href = "main_button1.html" target = "_black" style = "text-align: left;"><h2><i>영화 별 예매</i></h2></a>
 							<ul class = "list">
 								<li><a href = "#m">말레피센트</a></li>
 								<li><a href = "#joker">조커</a></li>
@@ -181,7 +191,15 @@
 						</th>
 					</tr>
 					<tr>
-						<td><a href = "main_button1.html" target = "_black">리뷰</a></td>
+						<td>
+							<a href = "main_button1.html" target = "_black" style = "text-align: left;"><h2><i>리뷰</i></h2></a>
+							<ul class = "list">
+								<li><a href = "#review1">리뷰1 (영화제목 / 평점 / 리뷰내용)</a></li>
+								<li><a href = "#review2">리뷰2</a></li>
+								<li><a href = "#review3">리뷰3</a></li>
+								<li><a href = "#review4">리뷰4</a></li>
+							</ul>
+						</td>
 					</tr>
 				</table>
 			</div>
