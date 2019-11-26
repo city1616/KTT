@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>KTT</title>
+	<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+	<meta charset = "utf-8">
+	<link rel = "icon" href = "image/bear3.ico" />
+	<link rel = "icon" href = "favicon.ico" />
+	<link rel = "stylesheet" type = "text/css" href = "CSS/global.css"  />
+	<link rel = "stylesheet" type = "text/css" href = "CSS/SEARCH/search.css" />
+	<link rel = "stylesheet" type = "text/css" href = "CSS/MENU/component.css" />
+	<link rel = "stylesheet" type = "text/css" href = "CSS/LOGIN/set1.css" /> <!-- 오른쪽으로 밀리는 모션 -->
+	<link rel = "stylesheet" type = "text/css" href = "CSS/LOGIN_FORM/style.css" />
+	<link rel = "stylesheet" type = "text/css" href = "CSS/LONGIN_FORM/demo.css" />
+	<!-- <link rel = "stylesheet" type = "text/css" href = "CSS/MENU/normalize.css" /> -->
+	<!-- <link rel = "stylesheet" type = "text/css" href = "CSS/MENU/demo.css" /> -->
+	<!-- <link rel = "stylesheet" type = "text/css" href = "CSS/LOGIN/normalize.css" /> -->
+	<!-- <link rel = "stylesheet" type = "text/css" href = "CSS/LOGIN/demo.css" /> -->
+	<!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">	search font -->
+
+</head>
+
+<body style = "font-family: Raleway; Color: #aaaaaa;">
+	<div style = "background-color: #5e5e5e; padding: 5px; text-align: center;"> <!-- #A3D0C3 -->
+		<div>
+			<a href = "main.html" target = "_self"><img src = "image/moviebear3.png" alt = "moviebear" class = "title_image"></a>
+			<a href = "main.html" target = "_self"><h1 class = "search_title">K T T</h1></a>
+			<div class="search__container">
+				<input class="search__input" type="text" placeholder="Search">
+			</div>
+			<!--
+			<div class = "search">
+				<form class = "search_form">
+					<input type = "text" placeholder = "영화 검색">
+					<button type = "submit"></button>
+				</form>
+			</div>
+		-->
+		</div>
+	</div>
+
+	<table width = "1000" border = "0" cellpadding = "0" cellspacing = "0" class = "siteheader">
+		<tbody>
+			<tr>
+				<td class = "top_blockquote">
+					<blockquote>"영화는 재밌다!!"</blockquote>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<table width = "100%" border = "0" cellspacing = "0" cellpadding = "0">
+						<tbody>
+							<tr>
+								<td width = "200" valign = "top" class = "left_side">
+									<div class="menu menu--viola">
+										<ul class="menu__list">
+											<li class="menu__item menu__item--current"><a href="#" onclick = "location.href = 'main.html'" target = "_blank" class="menu__link">HOME</a></li>
+											<li class="menu__item"><a href="#" class="menu__link">TICKETING</a>
+												<ul class = "inside_menu">
+													<li class = "menu__item inside"><a href = "#" class = "menu__link">CGV</a></li>
+													<li class = "menu__item inside"><a href = "#" class = "menu__link">롯데시네마</a></li>
+													<li class = "menu__item inside"><a href = "#" class = "menu__link">메가박스</a></li>
+												</ul>
+											</li>
+											<li class="menu__item"><a href="#" onclick = "location.href = 'main.html'" class="menu__link">REVIEW</a></li>
+											<li class="menu__item"><a href="#" onclick = "location.href = 'main.html'" class="menu__link">ABOUT</a></li>
+											<li class="menu__item"><a href="#" onclick = "location.href = 'main.html'" class="menu__link">CONTACT</a></li>
+										</ul>
+									</div>
+								</td>
+								<td width = "600" valign = "top" class = "main_center">
+									<br>
+									<br>
+									<div class="form">
+										<form id="contactform">
+											<p class="contact"><label for="name">Name</label></p>
+											<input id="name" name="name" placeholder="First and last name" required="" tabindex="1" type="text">
+											<p class="contact"><label for="email">Email</label></p>
+											<input id="email" name="email" placeholder="example@domain.com" required="" type="email">
+											<p class="contact"><label for="username">Create a username</label></p>
+											<input id="username" name="username" placeholder="username" required="" tabindex="2" type="text">
+											<p class="contact"><label for="password">Create a password</label></p>
+											<input type="password" id="password" name="password" required="">
+											<p class="contact"><label for="repassword">Confirm your password</label></p>
+											<input type="password" id="repassword" name="repassword" required="">
+											<fieldset>
+												<label>Birthday</label>
+												<label class="month">
+													<select class="select-style" name="BirthMonth">
+														<option value="">Month</option>
+														<option  value="01">January</option>
+										                <option value="02">February</option>
+										                <option value="03" >March</option>
+										                <option value="04">April</option>
+										                <option value="05">May</option>
+										                <option value="06">June</option>
+										                <option value="07">July</option>
+										                <option value="08">August</option>
+										                <option value="09">September</option>
+										                <option value="10">October</option>
+										                <option value="11">November</option>
+										                <option value="12" >December</option>
+										            </label>
+										        </select>
+										        <label>Day<input class="birthday" maxlength="2" name="BirthDay"  placeholder="Day" required=""></label>
+										        <label>Year <input class="birthyear" maxlength="4" name="BirthYear" placeholder="Year" required=""></label>
+										    </fieldset>
+										    <select class="select-style gender" name="gender">
+										    	<option value="select">i am..</option>
+										    	<option value="m">Male</option>
+										    	<option value="f">Female</option>
+										    	<option value="others">Other</option>
+										    </select>
+										    <br>
+										    <br>
+										    <p class="contact"><label for="phone">Mobile phone</label></p>
+										    <input id="phone" name="phone" placeholder="phone number" required="" type="text">
+										    <br>
+										    <input class="buttom" name="submit" id="submit" tabindex="5" value="Sign me up!" type="submit">
+										</form>
+									</div>      
+									<br>
+									<br>
+								</td>
+								<td valign = "top" class = "right_side">
+									<section class="content">
+										<h2>LOGIN</h2>
+										<span class="input input--kaede">
+											<input class="input__field input__field--kaede" type="text" id="input-35" />
+											<label class="input__label input__label--kaede" for="input-35">
+												<span class="input__label-content input__label-content--kaede">ID</span>
+											</label>
+										</span>
+										<span class="input input--kaede">
+											<input class="input__field input__field--kaede" type="text" id="input-36" />
+											<label class="input__label input__label--kaede" for="input-36">
+												<span class="input__label-content input__label-content--kaede">PASSWORD</span>
+											</label>
+										</span>
+										<p><input type = "submit" value = " Login" name = "submit"></input><input type = "submit" value = "Join in" name = "join"></input></p>
+									</section>
+									<!-- login 창
+									<div class = "login">
+										<h2>Login</h2>
+										<form id = "loginform" method = "post" action = "/user/login">
+											<div id = "innerlogin">
+												<p><input type = "text" name = "username" class = "login" title = "Username"></input></p>
+												<p><input type = "password" name = "password" class = "login" title = "Password"></input></p>
+												<p><input type = "submit" value = "Login" name = "submit"></input><input type = "submit" value = "Join in" name = "join"></input></p>
+											</div>
+										</form>
+									</div>
+								-->
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<hr color = "#000000" size = "1px">
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+	<div align = "center" style = "background-color: #5e5e5e; text-align: center; padding: 10px; margin-top: 7px;">
+		<a href = "https://movie.naver.com" target = "_blank"><strong>관리자 페이지</strong></a>
+		<p> 본 컨텐츠 저작권은 저작권자 또는 제공처에 있으며, 이를 무단 이용하는 경우 저작권법 등에 따라 법적 책임을 질 수 있습니다.</p>
+		<address>
+			<em>Copyright @Seungwoo</em>
+			<span>3K1M</span>
+		</address>
+	</div>
+	<script src="js/MENU/classie.js"></script> <!-- menu_bar -->
+	<script src="js/MENU/clipboard.min.js"></script>
+	<script src="js/LOGIN/classie.js"></script> <!-- login -->
+</body>
+</html>
