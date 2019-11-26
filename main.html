@@ -7,27 +7,33 @@
 	<link rel = "icon" href = "image/bear3.ico" />
 	<link rel = "icon" href = "favicon.ico" />
 	<link rel = "stylesheet" type = "text/css" href = "CSS/global.css"  />
-	<link rel = "stylesheet" type = "text/css" href = "CSS/MENU/normalize.css" />
-	<link rel = "stylesheet" type = "text/css" href = "CSS/MENU/demo.css" />
+	<link rel = "stylesheet" type = "text/css" href = "CSS/SEARCH/search.css" />
 	<link rel = "stylesheet" type = "text/css" href = "CSS/MENU/component.css" />
 	<link rel = "stylesheet" type = "text/css" href = "CSS/LOGIN/set1.css" /> <!-- 오른쪽으로 밀리는 모션 -->
+	<!-- <link rel = "stylesheet" type = "text/css" href = "CSS/MENU/normalize.css" /> -->
+	<!-- <link rel = "stylesheet" type = "text/css" href = "CSS/MENU/demo.css" /> -->
 	<!-- <link rel = "stylesheet" type = "text/css" href = "CSS/LOGIN/normalize.css" /> -->
-	<!-- <link rel="stylesheet" type="text/css" href="CSS/LOGIN/demo.css" /> -->
-
+	<!-- <link rel = "stylesheet" type = "text/css" href = "CSS/LOGIN/demo.css" /> -->
+	<!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">	search font -->
 
 </head>
 
 <body style = "font-family: Raleway; Color: #aaaaaa;">
 	<div style = "background-color: #5e5e5e; padding: 5px; text-align: center;"> <!-- #A3D0C3 -->
 		<div>
-			<img src = "image/moviebear3.png" alt = "moviebear" class = "title_image">
-			<h1 class = "search_title">KTT</h1>
+			<a href = "main.html" target = "_self"><img src = "image/moviebear3.png" alt = "moviebear" class = "title_image"></a>
+			<a href = "main.html" target = "_self"><h1 class = "search_title">K T T</h1></a>
+			<div class="search__container">
+				<input class="search__input" type="text" placeholder="Search">
+			</div>
+			<!--
 			<div class = "search">
 				<form class = "search_form">
 					<input type = "text" placeholder = "영화 검색">
 					<button type = "submit"></button>
 				</form>
 			</div>
+		-->
 		</div>
 	</div>
 
@@ -46,11 +52,17 @@
 								<td width = "200" valign = "top" class = "left_side">
 									<div class="menu menu--viola">
 										<ul class="menu__list">
-											<li class="menu__item menu__item--current"><a href="#" class="menu__link">HOME</a></li>
-											<li class="menu__item"><a href="#" class="menu__link">TICKETING</a></li>
-											<li class="menu__item"><a href="#" class="menu__link">REVIEW</a></li>
-											<li class="menu__item"><a href="#" class="menu__link">ABOUT</a></li>
-											<li class="menu__item"><a href="#" class="menu__link">CONTACT</a></li>
+											<li class="menu__item menu__item--current"><a href="#" onclick = "location.href = 'main.html'" target = "_blank" class="menu__link">HOME</a></li>
+											<li class="menu__item"><a href="#" onclick = "location.href = 'main.html'" class="menu__link">TICKETING</a>
+												<ul class = "inside_menu">
+													<li class = "menu__item inside"><a href = "#" class = "menu__link">CGV</a></li>
+													<li class = "menu__item inside"><a href = "#" class = "menu__link">롯데시네마</a></li>
+													<li class = "menu__item inside"><a href = "#" class = "menu__link">메가박스</a></li>
+												</ul>
+											</li>
+											<li class="menu__item"><a href="#" onclick = "location.href = 'main.html'" class="menu__link">REVIEW</a></li>
+											<li class="menu__item"><a href="#" onclick = "location.href = 'main.html'" class="menu__link">ABOUT</a></li>
+											<li class="menu__item"><a href="#" onclick = "location.href = 'main.html'" class="menu__link">CONTACT</a></li>
 										</ul>
 									</div>
 									
@@ -72,10 +84,10 @@
 									<br>
 									<div class="menu menu--alonso">
 										<ul class="center_menu">
-											<li class="menu__item menu__item--current"><a href="main_button1.html" target = "ifr" class="menu__link">예매 순</a></li>
-											<li class="menu__item"><a href="main_button2.html" target = "_blank" class="menu__link">평점 순</a></li>
-											<li class="menu__item"><a href="main_button3.html" target = "ifr" class="menu__link">박스오피스</a></li>
-											<li class="menu__item"><a href="main_button4.html" target = "ifr" class="menu__link">개봉 예정작</a></li>
+											<li class="menu__item menu__item--current"><a href="#" onclick = "ifr.location.href = 'main_button1.html'" target = "ifr" class="menu__link">예매 순</a></li>
+											<li class="menu__item"><a href="#" onclick = "ifr.location.href = 'main_button2.html'" target = "ifr" class="menu__link">평점 순</a></li>
+											<li class="menu__item"><a href="#" onclick = "ifr.location.href = 'main_button3.html'" target = "ifr" class="menu__link">박스오피스</a></li>
+											<li class="menu__item"><a href="#" onclick = "ifr.location.href = 'main_button4.html'" target = "ifr" class="menu__link">개봉 예정작</a></li>
 											<li class="menu__line"></li>
 										</ul>
 									</div>
@@ -152,7 +164,7 @@
 												<span class="input__label-content input__label-content--kaede">PASSWORD</span>
 											</label>
 										</span>
-										<p><input type = "submit" value = " Login" name = " submit"></input><input type = "submit" value = "Join in" name = " join"></input></p>
+										<p><input type = "submit" value = " Login" name = "submit"></input><input type = "submit" onclick = "location.href = 'join.html'" value = "Join in" name = "join"></input></p>
 									</section>
 									<!-- login 창
 									<div class = "login">
@@ -189,6 +201,7 @@
 		</address>
 	</div>
 	<script src="js/MENU/classie.js"></script> <!-- menu_bar -->
+	<script src="js/MENU/clipboard.min.js"></script>
 	<script src="js/LOGIN/classie.js"></script> <!-- login -->
 </body>
 </html>

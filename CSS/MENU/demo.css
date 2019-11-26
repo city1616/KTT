@@ -30,17 +30,6 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
-a {
-	text-decoration: none;
-	color: #ffffff;
-	outline: none;
-}
-
-a:hover,
-a:focus {
-	color: #f48b95;
-}
-
 .hidden {
 	position: absolute;
 	overflow: hidden;
