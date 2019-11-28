@@ -151,13 +151,17 @@ td.top_blockquote {
 	color: #F9F0DA;
 }
 */
-
+/*
 .login {
 	background-color: #e5e5e5;
-	
 	padding: 0px;
 	margin-top: 7px;
 	text-align: center;
+}
+*/
+.login_button, .join_button {
+	width: 70px;
+	height: 30px;
 }
 
 .frame {
