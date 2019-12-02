@@ -36,7 +36,7 @@
 		</div>
 	</div>
 
-	<table width = "1000" border = "0" cellpadding = "0" cellspacing = "0" class = "siteheader">
+	<table width = "1200" border = "0" cellpadding = "0" cellspacing = "0" class = "siteheader">
 		<tbody>
 			<tr>
 				<td class = "top_blockquote">
@@ -52,6 +52,7 @@
 									<div class = "menu menu--viola">
 										<ul class = "menu__list">
 											<li class = "menu__item menu__item--current"><a href = "#" onclick = "location.href = 'main.html'" target = "_blank" class = "menu__link">HOME</a></li>
+											<li class = "menu__item"><a href = "#" onclick = "location.href = 'movie_list.html'" class = "menu__link">MOVIE</a></li>
 											<li class = "menu__item"><a href = "#" onclick = "location.href = 'theater.html'" class = "menu__link">THEATER</a>
 												<ul class = "inside_menu">
 													<li class = "menu__item inside"><a href = "#" onclick = "window.open('http://www.cgv.co.kr')" class = "menu__link">CGV</a></li>
@@ -60,8 +61,7 @@
 												</ul>
 											</li>
 											<li class = "menu__item"><a href = "#" onclick = "location.href = 'review.html'" class = "menu__link">REVIEW</a></li>
-											<li class = "menu__item"><a href = "#" onclick = "location.href = 'main.html'" class = "menu__link">ABOUT</a></li>
-											<li class = "menu__item"><a href = "#" onclick = "location.href = 'main.html'" class = "menu__link">CONTACT</a></li>
+											<li class = "menu__item"><a href = "#" onclick = "location.href = 'about.html'" class = "menu__link">ABOUT</a></li>
 										</ul>
 									</div>
 									
@@ -79,15 +79,16 @@
 									</div>
 								-->
 								</td>
-								<td width = "600" valign = "top" class = "main_center">
+
+								<td width = "800" valign = "top" class = "main_center">
 									<br>
 									<div class = "menu menu--alonso">
 										<ul class = "center_menu">
-											<li class = "menu__item menu__item--current"><a href = "#" onclick = "ifr.location.href = 'https://www.naver.com/'" target = "ifr" class = "menu__link">예매 순</a></li>
-											<li class = "menu__item"><a href = "#" onclick = "ifr.location.href = 'https://www.apple.com/kr/'" target = "ifr" class = "menu__link">평점 순</a></li>
-											<li class = "menu__item"><a href = "#" onclick = "ifr.location.href = 'main_button3.html'" target = "ifr" class = "menu__link">박스오피스</a></li>
-											<li class = "menu__item"><a href = "#" onclick = "ifr.location.href = 'main_button4.html'" target = "ifr" class = "menu__link">개봉 예정작</a></li>
-											<li class = "menu__line"></li>
+											<li class = "menu__item menu__item--current"><a href = "#" onclick = "ifr.location.href = 'https://www.naver.com/'" target = "ifr" class = "menu__link" style = "margin-left: 50px;">현재상영영화</a></li>
+											<li class = "menu__item"><a href = "#" onclick = "ifr.location.href = 'https://www.apple.com/kr/'" target = "ifr" class = "menu__link">개봉예정영화</a></li>
+											<li class = "menu__item"><a href = "#" onclick = "ifr.location.href = 'main_button3.html'" target = "ifr" class = "menu__link">평점순</a></li>
+											<li class = "menu__item"><a href = "#" onclick = "ifr.location.href = 'main_button4.html'" target = "ifr" class = "menu__link">리뷰순</a></li>
+											<li class = "menu__line" style = "margin-left: 50px;"></li>
 										</ul>
 									</div>
 									<!--  main-center_menu
@@ -102,9 +103,9 @@
 										</tbody>
 									</table>
 									-->
-									<br>
-									<br>
-									<table border = "0" width = "100%" height = "300" cellspacing = "5" cellpadding = "0">
+									
+									<!--
+									<table border = "0" width = "100%" height = "300" cellspacing = "5" cellpadding = "0" >
 										<tbody>
 											<tr>
 												<td>
@@ -113,41 +114,93 @@
 											</tr>
 										</tbody>
 									</table>
-									<br>
-									<table border = "0" width = "100%">
-										<tbody>
-											<tr>
-												<th>
-													<a href = "main_button1.html" target = "_blank" style = "text-align: left;"><h2><i>극장 별 예매</i></h2></a>
-													<ul class = "list">
-														<li><a href = "#cgv">CGV</a></li>
-														<li><a href = "#lotte">롯데시네마</a></li>
-														<li><a href = "#mega">메가박스</a></li>
-													</ul>
-												</th>
-												<th>
-													<a href = "main_button1.html" target = "_blank" style = "text-align: left;"><h2><i>영화 별 예매</i></h2></a>
-													<ul class = "list">
-														<li><a href = "#m">말레피센트</a></li>
-														<li><a href = "#joker">조커</a></li>
-														<li><a href = "#frozen">겨울왕국</a></li>
-													</ul>
-												</th>
-											</tr>
-											<tr>
-												<td>
-													<a href = "main_button1.html" target = "_blank" style = "text-align: left;"><h2><i>리뷰</i></h2></a>
-													<ul class = "list">
-														<li><a href = "#review1">리뷰1</a></li>
-														<li><a href = "#review1">리뷰2</a></li>
-														<li><a href = "#review1">리뷰3</a></li>
-														<li><a href = "#review1">리뷰4</a></li>
-													</ul>
-												</td>
-											</tr>
-										</tbody>
-									</table>
+								-->
+									<div class = "center_movie_div">
+										<ul class = "center_movie_ul" style = "display: block; list-style-type: none; margin: 0;">
+											<li class = "movie1">
+												<div>
+													<a href = "#">
+														<p><em>1</em></p>
+														<img src = "image/poster/Frozen2.jpg" alt = "Frozen 2">
+													</a>
+												</div>
+											</li>
+											<li class = "movie1">
+												<div>
+													<a href = "#">
+														<p><em>2</em></p>
+														<img src = "image/poster/Joker.jpg" alt = "Frozen 2">
+													</a>
+												</div>
+											</li>
+											<li class = "movie1">
+												<div>
+													<a href = "#">
+														<p><em>3</em></p>
+														<img src = "image/poster/Frozen2.jpg" alt = "Frozen 2">
+													</a>
+												</div>
+											</li>
+											<li class = "movie1">
+												<div>
+													<a href = "#">
+														<p><em>4</em></p>
+														<img src = "image/poster/Joker.jpg" alt = "Frozen 2">
+													</a>
+												</div>
+											</li>
+											<li class = "movie1">
+												<div>
+													<a href = "#">
+														<p><em>5</em></p>
+														<img src = "image/poster/Frozen2.jpg" alt = "Frozen 2">
+													</a>
+												</div>
+											</li>
+											<li class = "movie1">
+												<div>
+													<a href = "#">
+														<p><em>6</em></p>
+														<img src = "image/poster/Joker.jpg" alt = "Frozen 2">
+													</a>
+												</div>
+											</li>
+											<li class = "movie1">
+												<div>
+													<a href = "#">
+														<p><em>7</em></p>
+														<img src = "image/poster/Frozen2.jpg" alt = "Frozen 2">
+													</a>
+												</div>
+											</li>
+											<li class = "movie1">
+												<div>
+													<a href = "#">
+														<p><em>8</em></p>
+														<img src = "image/poster/Joker.jpg" alt = "Frozen 2">
+													</a>
+												</div>
+											</li>
+											<li class = "movie1">
+												<div>
+													<a href = "#">
+														<p><em>9</em></p>
+														<img src = "image/poster/Frozen2.jpg" alt = "Frozen 2">
+													</a>
+												</div>
+											</li>
+											<li class = "movie1">
+												<div>
+													<a href = "#">
+														<p><em>10</em></p>
+														<img src = "image/poster/Joker.jpg" alt = "Frozen 2">
+													</a>
+												</div>
+											</li>
+										</ul>
+									</div>
 								</td>
+
 								<td valign = "top" class = "right_side">
 									<section class="content">
 										<h2>LOGIN</h2>

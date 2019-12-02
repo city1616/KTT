@@ -1,0 +1,130 @@
+
+
+.tit_t1 {
+    font-size: 30px;
+}
+
+.lst_detail_t1 li {
+    overflow: hidden;
+    
+}
+
+.lst_detail_t1 li + li {
+    padding-top: 16px;
+    background: url(https://ssl.pstatic.net/static/movie/2012/08/dot_line2.gif) repeat-x
+}
+
+.lst_detail_t1 .thumb {
+    float: right;
+    width: 202px;
+    margin-right: 0;
+}
+
+.lst_detail_t1 .thumb img {
+    vertical-align: center;
+}
+
+
+.lst_detail_t1 .lst_dsc {
+    float: left;
+    width: 546px;
+    margin-top: 0px;
+    vertical-align: left;
+    text-align: left;
+    
+}
+
+
+.lst_detail_t1 .thumb2 ~ .lst_dsc .info_t1 {
+    margin-top: 6px !important
+}
+
+.lst_dsc > .tit {
+    float: center;
+    overflow: hidden;
+    padding-bottom: 2px;
+    font-size: 30px;
+    line-height: 50px;
+    letter-spacing: -1px;
+    font-weight: bold;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-left: 100px;
+}
+
+.movie_title2 {
+    float: center;
+    overflow: hidden;
+    width: 415px;
+    height: 15px;
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+.lst_dsc .info_txt1 dt {
+    float: left;
+    clear: both;
+    overflow: hidden;
+    width: 40px;
+    height: 25px;
+    margin-top: 1px;
+    font-size: 20px;
+}
+
+.lst_dsc .info_txt1 dd {
+    overflow: hidden;
+    margin: 2px 0 0 31px;
+    line-height: 25px;
+    font-size: 17px;
+    color: #fff;
+
+}
+
+.under_review li {
+    position: relative;
+    width: 760px;
+    float: left;
+    
+    text-align: left;
+    /*border-bottom: 1px solid black;*/
+}
+
+.under_review {
+    list-style-type: none;
+}
+
+
+.score_result .score_reple {
+    display: inline-block;
+    float: left;
+    width: 800px;
+    margin-left: 0;
+
+}
+
+.score_result .score_reple dl {
+    overflow: hidden;
+    margin: 8px 0 10px;
+}
+
+.user_id, .day{
+    font-size: 12px;
+}
+
+.reple {
+    font-size: 15px;
+}
+
+.like_btn button {
+    background-color: transparent !important;
+    background-image: none !important;
+    border-color: transparent;
+    border: none;
+    color: #FFFFFF; 
+}
+
+.NumCount {
+    display: inline-block;
+    margin-bottom: 20px;
+    vertical-align: middle;
+}
