@@ -4,44 +4,32 @@
 	<title>KTT</title>
 	<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
 	<meta charset = "utf-8">
-	<link rel = "icon" href = "image/bear3.ico" />
-	<link rel = "icon" href = "favicon.ico" />
-	<link rel = "stylesheet" type = "text/css" href = "CSS/global.css"  />
+	<link rel = "stylesheet" type = "text/css" href = "CSS/global.css"/>
 	<link rel = "stylesheet" type = "text/css" href = "CSS/SEARCH/search.css" />
 	<link rel = "stylesheet" type = "text/css" href = "CSS/MENU/component.css" />
 	<link rel = "stylesheet" type = "text/css" href = "CSS/LOGIN/set1.css" /> <!-- 오른쪽으로 밀리는 모션 -->
+	<
 	<!-- <link rel = "stylesheet" type = "text/css" href = "CSS/MENU/normalize.css" /> -->
 	<!-- <link rel = "stylesheet" type = "text/css" href = "CSS/MENU/demo.css" /> -->
 	<!-- <link rel = "stylesheet" type = "text/css" href = "CSS/LOGIN/normalize.css" /> -->
 	<!-- <link rel = "stylesheet" type = "text/css" href = "CSS/LOGIN/demo.css" /> -->
 	<!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">	search font -->
-
 </head>
 
 <body style = "font-family: Raleway; Color: #aaaaaa;">
 	<div style = "background-color: #5e5e5e; padding: 5px; text-align: center;"> <!-- #A3D0C3 -->
 		<div>
-			<a href = "main.html" target = "_self"><img src = "image/moviebear3.png" alt = "moviebear" class = "title_image"></a>
+			<a href = "main.html" target = "_self"><img src = "image/kttcat.png" alt = "watching movie cat" class = "title_image"></a>
 			<a href = "main.html" target = "_self"><h1 class = "search_title">K T T</h1></a>
 			<div class="search__container">
-				<input class="search__input" type="text" placeholder="Search">
+				<input class="search__input" type="text" placeholder="영화 검색">
 			</div>
-			<!--
-			<div class = "search">
-				<form class = "search_form">
-					<input type = "text" placeholder = "영화 검색">
-					<button type = "submit"></button>
-				</form>
-			</div>
-		-->
 		</div>
 	</div>
-
-	<table width = "1000" border = "0" cellpadding = "0" cellspacing = "0" class = "siteheader">
+	<table width = "1200" border = "0" cellpadding = "0" cellspacing = "0" class = "siteheader">
 		<tbody>
 			<tr>
 				<td class = "top_blockquote">
-					<blockquote>"영화는 재밌다!!"</blockquote>
 				</td>
 			</tr>
 			<tr>
@@ -53,131 +41,135 @@
 									<div class="menu menu--viola">
 										<ul class="menu__list">
 											<li class="menu__item menu__item--current"><a href="#" onclick = "location.href = 'main.html'" target = "_blank" class="menu__link">HOME</a></li>
-											<li class="menu__item"><a href="#" onclick = "location.href = 'main.html'" class="menu__link">TICKETING</a>
+											<li calss="menu__item"><a href = "#" onclick="location.href = 'movie_list.html'" target = "_blank" class="menu__link">MOVIE</a></li>
+											<li class="menu__item"><a href="#" onclick = "location.href = 'main.html'" class="menu__link">THEATER</a>
 												<ul class = "inside_menu">
-													<li class = "menu__item inside"><a href = "#" class = "menu__link">CGV</a></li>
-													<li class = "menu__item inside"><a href = "#" class = "menu__link">롯데시네마</a></li>
-													<li class = "menu__item inside"><a href = "#" class = "menu__link">메가박스</a></li>
+													<li class = "menu__item inside"><a href = "#" onclick = "location.href = 'http://www.cgv.co.kr'" class = "menu__link" target = "_blank">CGV</a></li>
+													<li class = "menu__item inside"><a href = "#" onclick = "location.href = 'http://www.lottecinema.co.kr/LCHS/index.aspx'" class = "menu__link" target = "_blank">롯데시네마</a></li>
+													<li class = "menu__item inside"><a href = "#" onclick = "location.href = 'http://www.megabox.co.kr'" class = "menu__link" target = "_blank">메가박스</a></li>
 												</ul>
 											</li>
-											<li class="menu__item"><a href="#" onclick = "location.href = 'main.html'" class="menu__link">REVIEW</a></li>
-											<li class="menu__item"><a href="#" onclick = "location.href = 'main.html'" class="menu__link">ABOUT</a></li>
-											<li class="menu__item"><a href="#" onclick = "location.href = 'main.html'" class="menu__link">CONTACT</a></li>
+											<li class="menu__item"><a href="#" onclick = "location.href = 'review_list.html'" target ="_blank" class="menu__link">REVIEW</a></li>
+											<li class="menu__item"><a href="#" onclick = "location.href = 'review_list.html'" target ="_blank" class="menu__link">ABOUT</a></li>
 										</ul>
 									</div>
-									
-									<!--	left_side_menu
-									<div align = "center">
-										<br>
-										<div class = "menu">
-											<ul>
-												<li><a class = "active" href = "#home">HOME</a></li>
-												<li><a href = "#ticketing">TICKETING</a></li>
-												<li><a href = "#review">REVIEW</a></li>
-												<li><a href = "#about">ABOUT</a></li>
-											</ul>
-										</div>
-									</div>
-								-->
 								</td>
-								<td width = "600" valign = "top" class = "main_center">
-									<br>
+								<td width = "800" valign = "top" class = "main_center">
 									<div class="menu menu--alonso">
 										<ul class="center_menu">
-											<li class="menu__item menu__item--current"><a href="#" onclick = "ifr.location.href = 'main_button1.html'" target = "ifr" class="menu__link">예매 순</a></li>
+											<li class="menu__item menu__item--current"><a href="#" onclick = "ifr.location.href = 'main_button1.html'" target = "ifr" class="menu__link" style = "margin-left: 50px;">현재 상영 영화</a></li>
 											<li class="menu__item"><a href="#" onclick = "ifr.location.href = 'main_button2.html'" target = "ifr" class="menu__link">평점 순</a></li>
-											<li class="menu__item"><a href="#" onclick = "ifr.location.href = 'main_button3.html'" target = "ifr" class="menu__link">박스오피스</a></li>
-											<li class="menu__item"><a href="#" onclick = "ifr.location.href = 'main_button4.html'" target = "ifr" class="menu__link">개봉 예정작</a></li>
-											<li class="menu__line"></li>
+											<li class="menu__item"><a href="#" onclick = "ifr.location.href = 'main_button3.html'" target = "ifr" class="menu__link">개봉 예정 영화</a></li>
+											<li class="menu__item"><a href="#" onclick = "ifr.location.href = 'main_button4.html'" target = "ifr" class="menu__link">리뷰 순</a></li>
+											<li class="menu__line" style = "margin-left: 50px;"></li>
 										</ul>
 									</div>
-									<!--  main-center_menu
-									<table border = "0" width = "100%" cellspacing = "5" cellpadding = "0">
-										<tbody>
-											<tr>
-												<th><a href = "main_button1.html" target = "ifr" class = "main_button">예매 순</a></th>
-												<th><a href = "main_button2.html" target = "ifr" class = "main_button">평점 순</a></th>
-												<th><a href = "main_button3.html" target = "ifr" class = "main_button">박스오피스</a></th>
-												<th><a href = "main_button4.html" target = "ifr" class = "main_button">개봉 예정작</a></th>
-											</tr>
-										</tbody>
-									</table>
-									-->
-									<br>
-									<br>
-									<table border = "0" width = "100%" height = "300" cellspacing = "5" cellpadding = "0">
-										<tbody>
-											<tr>
-												<td>
-													<iframe class = "frame" src = "https://movie.naver.com" name = "ifr"></iframe>
-												</td>
-											</tr>
-										</tbody>
-									</table>
-									<br>
-									<table border = "0" width = "100%">
-										<tbody>
-											<tr>
-												<th>
-													<a href = "main_button1.html" target = "_blank" style = "text-align: left;"><h2><i>극장 별 예매</i></h2></a>
-													<ul class = "list">
-														<li><a href = "#cgv">CGV</a></li>
-														<li><a href = "#lotte">롯데시네마</a></li>
-														<li><a href = "#mega">메가박스</a></li>
-													</ul>
-												</th>
-												<th>
-													<a href = "main_button1.html" target = "_blank" style = "text-align: left;"><h2><i>영화 별 예매</i></h2></a>
-													<ul class = "list">
-														<li><a href = "#m">말레피센트</a></li>
-														<li><a href = "#joker">조커</a></li>
-														<li><a href = "#frozen">겨울왕국</a></li>
-													</ul>
-												</th>
-											</tr>
-											<tr>
-												<td>
-													<a href = "main_button1.html" target = "_blank" style = "text-align: left;"><h2><i>리뷰</i></h2></a>
-													<ul class = "list">
-														<li><a href = "#review1">리뷰1</a></li>
-														<li><a href = "#review1">리뷰2</a></li>
-														<li><a href = "#review1">리뷰3</a></li>
-														<li><a href = "#review1">리뷰4</a></li>
-													</ul>
-												</td>
-											</tr>
-										</tbody>
-									</table>
+									<div class = "center_movie_div">
+										<ul class = "center_movie_ul" style = "display: block; list-style-type: none; margin: 0;">
+											<li class = "movie1">
+												<div>
+													<a href = "#">
+														<p><em>1</em></p>
+														<img src = "image/poster/Frozen2.jpg" alt = "Frozen 2">
+													</a>
+												</div>
+											</li>
+											<li class = "movie1">
+												<div>
+													<a href = "#">
+														<p><em>2</em></p>
+														<img src = "image/poster/Joker.jpg" alt = "Frozen 2">
+													</a>
+												</div>
+											</li>
+											<li class = "movie1">
+												<div>
+													<a href = "#">
+														<p><em>3</em></p>
+														<img src = "image/poster/Frozen2.jpg" alt = "Frozen 2">
+													</a>
+												</div>
+											</li>
+											<li class = "movie1">
+												<div>
+													<a href = "#">
+														<p><em>4</em></p>
+														<img src = "image/poster/Joker.jpg" alt = "Frozen 2">
+													</a>
+												</div>
+											</li>
+											<li class = "movie1">
+												<div>
+													<a href = "#">
+														<p><em>5</em></p>
+														<img src = "image/poster/Frozen2.jpg" alt = "Frozen 2">
+													</a>
+												</div>
+											</li>
+											<li class = "movie1">
+												<div>
+													<a href = "#">
+														<p><em>6</em></p>
+														<img src = "image/poster/Joker.jpg" alt = "Frozen 2">
+													</a>
+												</div>
+											</li>
+											<li class = "movie1">
+												<div>
+													<a href = "#">
+														<p><em>7</em></p>
+														<img src = "image/poster/Frozen2.jpg" alt = "Frozen 2">
+													</a>
+												</div>
+											</li>
+											<li class = "movie1">
+												<div>
+													<a href = "#">
+														<p><em>8</em></p>
+														<img src = "image/poster/Joker.jpg" alt = "Frozen 2">
+													</a>
+												</div>
+											</li>
+											<li class = "movie1">
+												<div>
+													<a href = "#">
+														<p><em>9</em></p>
+														<img src = "image/poster/Frozen2.jpg" alt = "Frozen 2">
+													</a>
+												</div>
+											</li>
+											<li class = "movie1">
+												<div>
+													<a href = "#">
+														<p><em>10</em></p>
+														<img src = "image/poster/Joker.jpg" alt = "Frozen 2">
+													</a>
+												</div>
+											</li>
+										</ul>
+									</div>
 								</td>
+								<br>
+								<br>
 								<td valign = "top" class = "right_side">
 									<section class="content">
 										<h2>LOGIN</h2>
-										<span class="input input--kaede">
-											<input class="input__field input__field--kaede" type="text" id="input-35" />
-											<label class="input__label input__label--kaede" for="input-35">
-												<span class="input__label-content input__label-content--kaede">ID</span>
-											</label>
-										</span>
+											<form action = "/index.do">
+											<span class="input input--kaede">
+												<input class="input__field input__field--kaede" type="text" id="input-35" />
+												<label class="input__label input__label--kaede" for="input-35">
+													<span class="input__label-content input__label-content--kaede">ID</span>
+												</label>
+											</span>
+										</form>
 										<span class="input input--kaede">
 											<input class="input__field input__field--kaede" type="text" id="input-36" />
 											<label class="input__label input__label--kaede" for="input-36">
-												<span class="input__label-content input__label-content--kaede">PASSWORD</span>
+												<span class="input__label-content input__label-content--kaede">PWD</span>
 											</label>
 										</span>
-										<p><input type = "submit" value = " Login" name = "submit"></input><input type = "submit" onclick = "location.href = 'join.html'" value = "Join in" name = "join"></input></p>
+										<p><input type = "submit" value = "LOGIN" name = "submit"></input><input type = "submit" onclick = "location.href = 'join.html'" value = "JOININ" name = "join"></input></p>
 									</section>
-									<!-- login 창
-									<div class = "login">
-										<h2>Login</h2>
-										<form id = "loginform" method = "post" action = "/user/login">
-											<div id = "innerlogin">
-												<p><input type = "text" name = "username" class = "login" title = "Username"></input></p>
-												<p><input type = "password" name = "password" class = "login" title = "Password"></input></p>
-												<p><input type = "submit" value = "Login" name = "submit"></input><input type = "submit" value = "Join in" name = "join"></input></p>
-											</div>
-										</form>
-									</div>
-								-->
 								</td>
 							</tr>
 						</tbody>
@@ -186,17 +178,16 @@
 			</tr>
 			<tr>
 				<td>
-					<hr color = "#000000" size = "1px">
+					<hr color = "#353535" size = "1px">
 				</td>
 			</tr>
 		</tbody>
 	</table>
-	<br>
 	<div align = "center" style = "background-color: #5e5e5e; text-align: center; padding: 10px; margin-top: 7px;">
 		<a href = "https://movie.naver.com" target = "_blank"><strong>관리자 페이지</strong></a>
 		<p> 본 컨텐츠 저작권은 저작권자 또는 제공처에 있으며, 이를 무단 이용하는 경우 저작권법 등에 따라 법적 책임을 질 수 있습니다.</p>
 		<address>
-			<em>Copyright @Seungwoo</em>
+			<em>Copyright @KTT</em>
 			<span>3K1M</span>
 		</address>
 	</div>

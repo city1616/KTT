@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>KTT</title>
+	<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+	<meta charset = "utf-8">
+	<link rel = "stylesheet" type = "text/css" href = "CSS/global.css"  />
+	<link rel = "stylesheet" type = "text/css" href = "CSS/SEARCH/search.css" />
+	<link rel = "stylesheet" type = "text/css" href = "CSS/MENU/component.css" />
+	<link rel = "stylesheet" type = "text/css" href = "CSS/LOGIN/set1.css" /> <!-- 오른쪽으로 밀리는 모션 -->
+	<!-- <link rel = "stylesheet" type = "text/css" href = "CSS/MENU/normalize.css" /> -->
+	<!-- <link rel = "stylesheet" type = "text/css" href = "CSS/MENU/demo.css" /> -->
+	<!-- <link rel = "stylesheet" type = "text/css" href = "CSS/LOGIN/normalize.css" /> -->
+	<!-- <link rel = "stylesheet" type = "text/css" href = "CSS/LOGIN/demo.css" /> -->
+	<!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">	search font -->
+
+</head>
+
+<body style = "font-family: Raleway; Color: #aaaaaa;">
+	<div style = "background-color: #5e5e5e; padding: 5px; text-align: center;"> <!-- #A3D0C3 -->
+		<div>
+			<a href = "main.html" target = "_self"><img src = "image/kttcat.png" alt = "watching movie cat" class = "title_image"></a>
+			<a href = "main.html" target = "_self"><h1 class = "search_title">K T T</h1></a>
+			<div class="search__container">
+				<input class="search__input" type="text" placeholder="영화 검색">
+			</div>
+		</div>
+	</div>
+
+	<table width = "1200" border = "0" cellpadding = "0" cellspacing = "0" class = "siteheader">
+		<tbody>
+			<tr>
+				<td class = "top_blockquote">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<table width = "100%" border = "0" cellspacing = "0" cellpadding = "0">
+						<tbody>
+							<tr>
+								<td width = "200" valign = "top" class = "left_side">
+									<div class="menu menu--viola">
+										<ul class="menu__list">
+											<li class="menu__itemt"><a href="#" onclick = "location.href = 'main.html'" target = "_blank" class="menu__link">HOME</a></li>
+											<li calss="menu__item"><a href = "#" onclick="location.href = 'movie_list.html'" target = "_blank" class="menu__link">MOVIE</a></li>
+											<li class="menu__item"><a href="#" onclick = "location.href = 'main.html'" class="menu__link">THEATER</a>
+												<ul class = "inside_menu">
+													<li class = "menu__item inside"><a href = "#" onclick = "location.href = 'http://www.cgv.co.kr'" class = "menu__link" target = "_blank">CGV</a></li>
+													<li class = "menu__item inside"><a href = "#" onclick = "location.href = 'http://www.lottecinema.co.kr/LCHS/index.aspx'" class = "menu__link" target = "_blank">롯데시네마</a></li>
+													<li class = "menu__item inside"><a href = "#" onclick = "location.href = 'http://www.megabox.co.kr'" class = "menu__link" target = "_blank">메가박스</a></li>
+												</ul>
+											</li>
+											<li class="menu__item menu__item--current"><a href="#" onclick = "location.href = 'review_list.html'" target = "_blank" class="menu__link">REVIEW</a></li>
+											<li class="menu__item"><a href="#" onclick = "location.href = 'review_list.html'" target = "_blank" class="menu__link">ABOUT</a></li>
+										</ul>
+									</div>
+								</td>
+								<td width = "800" valign = "top" class = "main_center">
+									<div id="old_content" align="center">
+										<!-- list -->
+										<table cellspacing="0" class="list_table_1 list_h48">
+											<br><br>
+											<col width="41"><col width="83"><col width="*"><col width="75"><col width="72"><!-- 071009 -->
+											<thead>
+												<tr>
+													<th scope="col">no.</th>
+													<th scope="col">영화</th>
+													<th scope="col">제목</th>
+													<th scope="col" class="al">글쓴이·날짜</th>
+													<th scope="col" class="al">별점</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td><p>1</p></td>
+													<td class="movie"><a href="?st=code&sword=136873">겨울왕국 2</a></td>
+													<td class="title">
+														<a href="read.nhn?page=1&nid=4729196">겨울왕국2</a>
+														<!--// 운영자 추천 아이콘 -->
+													</td>
+													<td class="author num"><a href="javascript:find_review('nickname','4729196','', '');">shy4****</a>
+														<br />
+														19.11.28
+													</td>
+													<td>
+														<div class="point_type_1 fl">
+															<div class="mask" style="width:0%"><img src="https://ssl.pstatic.net/imgmovie/2007/img/common/point_type_1_bg_on.gif" width="59" height="11" alt="0점">
+															</div>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td><p>2</p></td>
+													<td class="movie"><a href="?st=code&sword=183803">크롤</a></td>
+													<td class="title" >				
+													<a href="read.nhn?page=1&nid=4729195">영화 &lt;크롤 Crawl, 2018&gt; 수륙양용의 악어가 주는 무시무시함(스...</a>
+													<!--// 운영자 추천 아이콘 -->
+													</td>
+													<td class="author num"><a href="javascript:find_review('nickname','4729195','', '');">lian****</a>
+														<br />
+														19.11.28
+													</td>
+													<td>
+														<div class="point_type_1 fl">
+															<div class="mask" style="width:70%"><img src="https://ssl.pstatic.net/imgmovie/2007/img/common/point_type_1_bg_on.gif" width="59" height="11" alt="7점">
+															</div>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td><p>3</p></td>
+													<td class="movie"><a href="?st=code&sword=155411">반드시 잡는다</a></td>
+													<td class="title" >
+														
+													<a href="read.nhn?page=1&nid=4729194">반드시 잡는다  _ 스포일러 포함입니다!!</a>
+													<!--// 운영자 추천 아이콘 -->
+													</td>
+													<td class="author num">
+														<a href="javascript:find_review('nickname','4729194','', '');">lion****</a>
+														<br />
+														19.11.28
+													</td>
+													<td>
+														<div class="point_type_1 fl">
+															<div class="mask" style="width:50%"><img src="https://ssl.pstatic.net/imgmovie/2007/img/common/point_type_1_bg_on.gif" width="59" height="11" alt="5점">
+															</div>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td><p>4</p></td>
+													<td class="movie"><a href="?st=code&sword=100935">비행기</a></td>
+													<td class="title" >
+														<a href="read.nhn?page=1&nid=4729193">현이들이</a>
+														<!--// 운영자 추천 아이콘 -->
+													</td>
+													<td class="author num"><a href="javascript:find_review('nickname','4729193','', '');">oakt****</a>
+														<br />
+														19.11.28
+													</td>
+													<td>
+														<div class="point_type_1 fl">
+															<div class="mask" style="width:0%"><img src="https://ssl.pstatic.net/imgmovie/2007/img/common/point_type_1_bg_on.gif" width="59" height="11" alt="0점">
+															</div>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td><p>5</p></td>
+													<td class="movie"><a href="?st=code&sword=167105">암수살인</a></td>
+													<td class="title" >
+														<a href="read.nhn?page=1&nid=4729192">암수살인 - 여느 범죄 미스터리 영화와는 그 느낌을 달리하게 하는 인...</a>
+													<!--// 운영자 추천 아이콘 -->
+													</td>
+													<td class="author num"><a href="javascript:find_review('nickname','4729192','', '');">yrsu****</a>
+														<br />
+														19.11.28
+													</td>
+													<td>
+														<div class="point_type_1 fl">
+															<div class="mask" style="width:70%"><img src="https://ssl.pstatic.net/imgmovie/2007/img/common/point_type_1_bg_on.gif" width="59" height="11" alt="7점">
+															</div>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td><p>6</p></td>
+													<td class="movie"><a href="?st=code&sword=188060">파비안느에 관한 진실</a></td>
+													<td class="title" >
+														<a href="read.nhn?page=1&nid=4729191">해소되지 않은 감정, &lt;파비안느에 관한 진실&gt;을 보고</a>
+													<!--// 운영자 추천 아이콘 -->
+													</td>
+													<td class="author num"><a href="javascript:find_review('nickname','4729191','', '');">taku****</a>
+														<br />
+														19.11.28
+													</td>
+													<td>
+														<div class="point_type_1 fl">
+															<div class="mask" style="width:0%"><img src="https://ssl.pstatic.net/imgmovie/2007/img/common/point_type_1_bg_on.gif" width="59" height="11" alt="0점">
+															</div>
+														</div>
+													</td>
+												</tr>												
+												<tr>
+													<td><p>7</p></td>
+													<td class="movie"><a href="?st=code&sword=74407">좀비랜드: 더블 탭</a></td>
+													<td class="title" >
+														<a href="read.nhn?page=1&nid=4729190">[영화/스포주의]좀비랜드-더블탭</a>
+														<!--// 운영자 추천 아이콘 -->
+													</td>
+													<td class="author num"><a href="javascript:find_review('nickname','4729190','', '');">chi2****</a>
+														<br />
+														19.11.28
+													</td>
+													
+													<td>
+														<div class="point_type_1 fl">
+															<div class="mask" style="width:0%"><img src="https://ssl.pstatic.net/imgmovie/2007/img/common/point_type_1_bg_on.gif" width="59" height="11" alt="0점">
+															</div>
+														</div>
+													</td>
+												</tr>												
+												<tr>
+													<td><p>8</p></td>
+													<td class="movie"><a href="?st=code&sword=136873">겨울왕국 2</a></td>
+													<td class="title" >
+														<a href="read.nhn?page=1&nid=4729189">겨울왕국2 (Frozen 2, 2019)</a>
+														<!--// 운영자 추천 아이콘 -->
+													</td>
+													<td class="author num"><a href="javascript:find_review('nickname','4729189','', '');">ykik****</a>
+														<br />
+														19.11.28
+													</td>													
+													<td>
+														<div class="point_type_1 fl">
+															<div class="mask" style="width:0%"><img src="https://ssl.pstatic.net/imgmovie/2007/img/common/point_type_1_bg_on.gif" width="59" height="11" alt="0점">
+															</div>
+														</div>
+													</td>
+												</tr>												
+												<tr>
+													<td><p>9</p></td>
+													<td class="movie"><a href="?st=code&sword=179159">신의 한 수: 귀수편</a></td>
+													<td class="title" >
+														<a href="read.nhn?page=1&nid=4729188">[영화 리뷰] 신의 한수: 귀수편</a>
+														<!--// 운영자 추천 아이콘 -->
+													</td>
+													<td class="author num"><a href="javascript:find_review('nickname','4729188','', '');">wlsw****</a>
+														<br />
+														19.11.28
+													</td>													
+													<td>
+														<div class="point_type_1 fl">
+															<div class="mask" style="width:70%"><img src="https://ssl.pstatic.net/imgmovie/2007/img/common/point_type_1_bg_on.gif" width="59" height="11" alt="7점">
+															</div>
+														</div>
+													</td>
+												</tr>												
+												<tr>
+													<td><p>10</p></td>
+													<td class="movie"><a href="?st=code&sword=167605">터미네이터: 다크 페이트</a></td>
+													<td class="title" >
+														<a href="read.nhn?page=1&nid=4729187">터미네이터: 다크페이트 (Terminator: Dark Fate, 2019),</a>
+														<!--// 운영자 추천 아이콘 -->
+													</td>
+													<td class="author num"><a href="javascript:find_review('nickname','4729187','', '');">bcco****</a>
+														<br />
+														19.11.28
+													</td>												
+													<td>
+														<div class="point_type_1 fl">
+															<div class="mask" style="width:0%"><img src="https://ssl.pstatic.net/imgmovie/2007/img/common/point_type_1_bg_on.gif" width="59" height="11" alt="0점">
+															</div>
+														</div>
+													</td>
+												</tr>												
+												<tr>
+													<td><p>11</p></td>
+													<td class="movie"><a href="?st=code&sword=136873">겨울왕국 2</a></td>
+													<td class="title" >
+														<a href="read.nhn?page=1&nid=4729186">관객도 스크린도 집어삼킨 '겨울왕국2'</a>
+														<!--// 운영자 추천 아이콘 -->
+													</td>
+													<td class="author num"><a href="javascript:find_review('nickname','4729186','', '');">bund****</a>
+														<br />
+														19.11.28
+													</td>													
+													<td>
+														<div class="point_type_1 fl">
+															<div class="mask" style="width:0%"><img src="https://ssl.pstatic.net/imgmovie/2007/img/common/point_type_1_bg_on.gif" width="59" height="11" alt="0점">
+															</div>
+														</div>
+													</td>
+												</tr>												
+												<tr>
+													<td><p>12</p></td>
+													<td class="movie"><a href="?st=code&sword=183803">크롤</a></td>
+													<td class="title" >
+														<a href="read.nhn?page=1&nid=4729185">악어떼가 나오는 흥미진진한 재난영화 크롤</a>
+														<!--// 운영자 추천 아이콘 -->
+													</td>
+													<td class="author num"><a href="javascript:find_review('nickname','4729185','', '');">suec****</a>
+														<br />
+														19.11.28
+													</td>													
+													<td>
+														<div class="point_type_1 fl">
+															<div class="mask" style="width:0%"><img src="https://ssl.pstatic.net/imgmovie/2007/img/common/point_type_1_bg_on.gif" width="59" height="11" alt="0점">
+															</div>
+														</div>
+													</td>
+												</tr>												
+												<tr>
+													<td><p>13</p></td>
+													<td class="movie"><a href="?st=code&sword=189111">두 교황</a></td>
+													<td class="title" >
+														<a href="read.nhn?page=1&nid=4729184">영화 두 교황 (The Two Popes, 2019) 간단 리뷰</a>
+														<!--// 운영자 추천 아이콘 -->
+													</td>
+													<td class="author num"><a href="javascript:find_review('nickname','4729184','', '');">viee****</a>
+														<br />
+														19.11.28
+													</td>													
+													<td>
+														<div class="point_type_1 fl">
+															<div class="mask" style="width:0%"><img src="https://ssl.pstatic.net/imgmovie/2007/img/common/point_type_1_bg_on.gif" width="59" height="11" alt="0점">
+															</div>
+														</div>
+													</td>
+												</tr>												
+												<tr>	
+													<td><p>14</p></td>
+													<td class="movie"><a href="?st=code&sword=187349">쥬만지: 넥스트 레벨</a></td>
+													<td class="title" >
+														<a href="read.nhn?page=1&nid=4729182">액션 영화 쥬만지:넥스트 레벨 메인 예고편 </a>
+														<!--// 운영자 추천 아이콘 -->
+													</td>
+													<td class="author num"><a href="javascript:find_review('nickname','4729182','', '');">leeb****</a>
+														<br />
+														19.11.28
+													</td>													
+													<td>
+														<div class="point_type_1 fl">
+															<div class="mask" style="width:0%"><img src="https://ssl.pstatic.net/imgmovie/2007/img/common/point_type_1_bg_on.gif" width="59" height="11" alt="0점">
+															</div>
+														</div>
+													</td>
+												</tr>												
+												<tr>
+													<td><p>15</p></td>
+													<td class="movie"><a href="?st=code&sword=186615">미드웨이</a></td>
+													<td class="title" >
+														<a href="read.nhn?page=1&nid=4729181">롤랜드 에머리히 감독의 &lt;미드웨이&gt; 포스터와 영화 예고편을 공...</a>
+														<!--// 운영자 추천 아이콘 -->
+													</td>
+													<td class="author num"><a href="javascript:find_review('nickname','4729181','', '');">5582****</a>
+														<br />
+														19.11.28
+													</td>						
+													<td>
+														<div class="point_type_1 fl">
+															<div class="mask" style="width:0%"><img src="https://ssl.pstatic.net/imgmovie/2007/img/common/point_type_1_bg_on.gif" width="59" height="11" alt="0점">
+															</div>
+														</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+										<!-- //list -->
+										<!-- 페이징 -->
+										<div class="paging">
+											<div>
+												<a href="/movie/board/review/list.nhn?&page=1"><span class="on">1</span></a>
+												<a href="/movie/board/review/list.nhn?&page=2"><span>2</span></a>
+												<a href="/movie/board/review/list.nhn?&page=3"><span>3</span></a>
+												<a href="/movie/board/review/list.nhn?&page=4"><span>4</span></a>
+												<a href="/movie/board/review/list.nhn?&page=5"><span>5</span></a>
+												<a href="/movie/board/review/list.nhn?&page=6"><span>6</span></a>
+												<a href="/movie/board/review/list.nhn?&page=7"><span>7</span></a>
+												<a href="/movie/board/review/list.nhn?&page=8"><span>8</span></a>
+												<a href="/movie/board/review/list.nhn?&page=9"><span>9</span></a>
+												<a href="/movie/board/review/list.nhn?&page=10"><span>10</span></a>
+												<a href="/movie/board/review/list.nhn?&page=2" title='다음' class='pg_next'><em>다음</em></a>
+											</div>
+										</div>
+										<!-- //페이징 -->
+										<br>
+										<div class = "review_div">
+											<button class = "review_button" type = "button" onclick = "location.href = 'review_write.html'">review 쓰기</button>
+										</div>
+										<br>
+										<!-- 탑버튼 -->
+										<div class="go">
+											<a style = "display: scroll; position: fixed; bottom: 10px; right: 10px;" href= "#" title = "맨위로"><img src="https://ssl.pstatic.net/imgmovie/2007/img/common/btn_top.gif" alt="TOP" width="30" height="11"></a>
+										</div>
+										<!-- //탑버튼 -->
+									</div>
+								</td>
+								<td valign = "top" class = "right_side">
+									<section class="content">
+										<h2>LOGIN</h2>
+										<span class="input input--kaede">
+											<input class="input__field input__field--kaede" type="text" id="input-35" />
+											<label class="input__label input__label--kaede" for="input-35">
+												<span class="input__label-content input__label-content--kaede">ID</span>
+											</label>
+										</span>
+										<span class="input input--kaede">
+											<input class="input__field input__field--kaede" type="text" id="input-36" />
+											<label class="input__label input__label--kaede" for="input-36">
+												<span class="input__label-content input__label-content--kaede">PWD</span>
+											</label>
+										</span>
+										<p><input type = "submit" value = "LOGIN" name = "submit"></input><input type = "submit" onclick = "location.href = 'join.html'" value = "JOININ" name = "join"></input></p>
+									</section>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<hr color = "#000000" size = "1px">
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+	<div align = "center" style = "background-color: #5e5e5e; text-align: center; padding: 10px; margin-top: 7px;">
+		<a href = "https://movie.naver.com" target = "_blank"><strong>관리자 페이지</strong></a>
+		<p> 본 컨텐츠 저작권은 저작권자 또는 제공처에 있으며, 이를 무단 이용하는 경우 저작권법 등에 따라 법적 책임을 질 수 있습니다.</p>
+		<address>
+			<em>Copyright @KTT</em>
+			<span>3K1M</span>
+		</address>
+	</div>
+	<script src="js/MENU/classie.js"></script> <!-- menu_bar -->
+	<script src="js/MENU/clipboard.min.js"></script>
+	<script src="js/LOGIN/classie.js"></script> <!-- login -->
+</body>
+</html>

@@ -1,2 +1,0 @@
-# KTT
- WebProgramming-MovieInfoPage
